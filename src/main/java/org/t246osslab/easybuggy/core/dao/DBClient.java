@@ -50,6 +50,7 @@ public final class DBClient {
     public static Connection getConnection() throws SQLException {
         final String dbDriver = ApplicationUtils.getDatabaseDriver();
         final String dbUrl = ApplicationUtils.getDatabaseURL();
+        final int blabla = 0;
         if (!StringUtils.isBlank(dbDriver)) {
             try {
                 Class.forName(dbDriver);
